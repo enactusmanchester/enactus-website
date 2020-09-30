@@ -25,11 +25,85 @@
     background: #515356;
   }
 
-
-
   .col-sm .text-center {
     padding: 0px !important;
   }
+
+  .team-member, .team-member .team-img {
+      position: relative;
+  }
+  .team-member {
+      overflow: hidden;
+  }
+  .team-member, .team-member .team-img {
+      position: relative;
+  }
+
+  .team-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 0;
+      border: 20px solid rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.90);
+      opacity: 0;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  .team-member:hover .team-hover .desk {
+      top: 35%;
+  }
+  .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+      opacity: 1;
+  }
+  .team-hover .desk {
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      opacity: 0;
+      -webkit-transform: translateY(-55%);
+      -ms-transform: translateY(-55%);
+      transform: translateY(-55%);
+      -webkit-transition: all 0.3s 0.2s;
+      transition: all 0.3s 0.2s;
+      padding: 0 20px;
+  }
+  .desk, .desk h4, .team-hover .s-link a {
+      text-align: center;
+      color: #222;
+  }
+  .team-member:hover .team-hover .s-link {
+      bottom: 10%;
+  }
+  .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+      opacity: 1;
+  }
+  .team-hover .s-link {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      opacity: 0;
+      text-align: center;
+      -webkit-transform: translateY(45%);
+      -ms-transform: translateY(45%);
+      transform: translateY(45%);
+      -webkit-transition: all 0.3s 0.2s;
+      transition: all 0.3s 0.2s;
+      font-size: 35px;
+  }
+  .desk, .desk h4, .team-hover .s-link a {
+      text-align: center;
+      color: #222;
+  }
+  .team-member .s-link a {
+      margin: 0 10px;
+      color: #333;
+      font-size: 16px;
+  }
+
+
 
 
 
@@ -222,15 +296,15 @@
     <div class="row justify-content-center">
 
       <div class="col-md text-center align-self-center justify-content-center">
-        <img class="img-fluid" src="./images/events/ice.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
+        <img class="img-fluid" src="./images/events/ice.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px; padding: 18px;">
       </div>
 
       <div class="col-md text-center align-self-center justify-content-center">
-        <img class="img-fluid" src="./images/events/ice.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
+        <img class="img-fluid" src="./images/events/nationals.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px; padding: 18px;">
       </div>
 
       <div class="col-md text-center align-self-center justify-content-center">
-        <img class="img-fluid" src="./images/events/ice.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
+        <img class="img-fluid" src="./images/events/pub.png" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px; padding: 18px;">
       </div>
 
     </div>
@@ -252,17 +326,58 @@
 
     <div class="row justify-content-center">
 
-      <div class="col-md text-center align-self-center justify-content-center">
-        <img class="img-fluid" src="./images/committee/sonja2.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
+      <div class="col-md text-center align-self-center justify-content-center" style="padding: 18px;">
+        <div class="team-member">
+          <img class="img-fluid" src="./images/committee/sonja2.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
+          <div class="team-hover" style="width: 280px; height: 280px; margin-top: 7px; margin-bottom: 10px;">
+            <div class="desk">
+              <p style="font-weight: bold;">Sonja Haase</p>
+              <p>Co-President Executives</p>
+            </div>
+            <div class="s-link">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="col-md text-center align-self-center justify-content-center">
-        <img class="img-fluid" src="./images/committee/alexia2.png" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
+      <div class="col-md text-center align-self-center justify-content-center" style="padding: 18px;">
+        <div class="team-member">
+          <img class="img-fluid" src="./images/committee/alexia2.png" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
+          <div class="team-hover" style="width: 280px; height: 280px; margin-top: 7px; margin-bottom: 10px;">
+            <div class="desk">
+              <p style="font-weight: bold;">Alexia Leroy</p>
+              <p>Co-President Projects</p>
+            </div>
+            <div class="s-link">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="col-md text-center align-self-center justify-content-center">
-        <img class="img-fluid" src="./images/committee/ilayda2.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
+
+      <div class="col-md text-center align-self-center justify-content-center" style="padding: 18px;">
+        <div class="team-member">
+          <img class="img-fluid" src="./images/committee/ilayda2.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
+          <div class="team-hover" style="width: 280px; height: 280px; margin-top: 7px; margin-bottom: 10px;">
+            <div class="desk">
+              <p style="font-weight: bold;">Ilayda Cotelioglu</p>
+              <p>Marketing Executive</p>
+            </div>
+            <div class="s-link">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
+
 
       <br>
 
@@ -342,7 +457,7 @@
           <img class="img-fluid" src="./images/committee/kash2.jpg" width="280" height = "280" style="margin-top: 7px; margin-bottom: 10px;">
         </div>
 
-      
+
 
         <br>
 
