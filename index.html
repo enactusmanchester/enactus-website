@@ -103,6 +103,60 @@
       font-size: 16px;
   }
 
+  form { max-width:420px; margin:50px auto; }
+
+  .feedback-input {
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #4c4d4f;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+
+  .feedback-input:focus { border:2px solid #4c4d4f; }
+
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+
+  [type="submit"] {
+    width: 100%;
+    background:#4c4d4f;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#fecb18; }
+
+  #rec {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .g-recaptcha {
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
 
 
@@ -156,7 +210,7 @@
             <a class="nav-link" href="#committeePage" style="color: white;">Committee</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: white;">Contact</a>
+            <a class="nav-link" href="#contactPage" style="color: white;">Contact</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -219,8 +273,10 @@
   <div class="container d-flex h-100">
     <div class="row">
       <div class="col-lg text-center align-self-center">
-        <h1 class="display-4" style="color: white;" >About us</h1>
-
+        <h1 class="display-4" style="color: white; margin-bottom: 0px;" >About us</h1>
+        <svg width="135" height="7">
+          <rect width="135" height="7" style="fill:#fecb18;stroke-width:3;stroke:#fecb18" />
+        </svg>
         <p class="lead" style="color:white;" > Do you want the chance to gain work experience and develop your skills in an entrepreneurial way via networking with amazing global partners such as Amazon, HSBC, Visa, Asda and so many others, whilst helping people in the local community? If you answered yes, then Enactus Manchester is perfect for you! Enactus stands for 'Entrepreneurial Action Through Us.' It is a global student-led organisation which develops and implements social enterprise projects with the aim of giving students a chance to use their degree skills as well as their business acumen to help empower others.</p>
       </div>
       <div class="col-lg text-center align-self-center">
@@ -233,6 +289,10 @@
 <section class="projects" id="projectsPage">
   <br>
   <h1 class="display-4" style= "text-align: center" >Our Projects</h1>
+  <svg  style="display: block; margin: 0 auto;" width="135" height="7">
+    <rect width="135" height="7" style="fill:#fecb18;stroke-width:3;stroke:#fecb18;" />
+  </svg>
+
   <br>
 
   <div class="container d-flex h-100 justify-content-center">
@@ -617,18 +677,31 @@
         </div>
 
 
-
         <br>
 
       </div>
 
   </div>
 
-
-
-
-
   <br>
+
+</section>
+
+<section class="contact" id="contactPage">
+  <br>
+  <h1 class="display-4" style= "text-align: center;" >Drop us a message!</h1>
+  <svg style="display: block; margin: 0 auto;" width="135" height="7">
+    <rect width="135" height="7" style="fill:#fecb18;stroke-width:3;stroke:#fecb18" />
+  </svg>
+  <br>
+
+  <form method="POST" data-netlify="true">
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />
+    <input name="email" type="email" class="feedback-input" placeholder="Email" />
+    <textarea name="text" class="feedback-input" placeholder="Message" required minlength="10"></textarea>
+    <div id="rec" data-netlify-recaptcha="true"></div>
+    <input type="submit" value="SUBMIT"/>
+  </form>
 
 </section>
 
