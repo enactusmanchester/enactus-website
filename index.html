@@ -165,16 +165,28 @@
     color: #fecb18 !important;
   }
 
-  .navbar-nav .container-fluid.justify-content-around .fa.fa-facebook:hover {
+  .navbar-nav .container-fluid.justify-content-center .fa.fa-facebook:hover {
     color: #fecb18 !important;
   }
 
-  .navbar-nav .container-fluid.justify-content-around .fa.fa-instagram:hover {
+  .navbar-nav .container-fluid.justify-content-center .fa.fa-instagram:hover {
     color: #fecb18 !important;
   }
 
-  .navbar-nav .container-fluid.justify-content-around .fa.fa-linkedin:hover {
+  .navbar-nav .container-fluid.justify-content-center .fa.fa-linkedin:hover {
     color: #fecb18 !important;
+  }
+
+  .navbar-dark .navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .navbar-dark .navbar-toggler-icon {
+    outline: none !important;
+    box-shadow: none !important;
+    color: white;
   }
 
 
@@ -195,6 +207,7 @@
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="./images/EnactusMoomba2.png">
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -204,14 +217,14 @@
 
   </head>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-custom" style="background-color: #4c4d4f">
-      <a class="navbar-brand" href="#">  <img src="./images/EnactusMoomba2.png" height="65" width="65"> </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom" style="background-color: #4c4d4f">
+      <a class="navbar-brand hidden-xs" href="#">  <img src="./images/EnactusMoomba2.png" height="65" width="65"> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto" style="text-align: center;">
           <li class="nav-item">
             <a class="nav-link" href="#aboutUsPage" style="color: white;">About</a>
           </li>
@@ -222,7 +235,7 @@
             <a class="nav-link" href="#eventsPage" style="color: white;">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: white;">Opportunites</a>
+            <a class="nav-link" href="#opportunitiesPage" style="color: white;">Opportunites</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#committeePage" style="color: white;">Committee</a>
@@ -232,10 +245,10 @@
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <div class="container-fluid justify-content-around">
+          <div class="container-fluid justify-content-center">
             <a href="https://www.facebook.com/EnactusMcr"><i class="fa fa-facebook" style="font-size:30px; color: white; margin-right: 7px;"></i></a>
-            <a href="#"><i class="fa fa-instagram" style="font-size:30px; color: white; margin-right: 7px; margin-left: 7px;"></i></a>
-            <a href="#"><i class="fa fa-linkedin" style="font-size:30px; color: white; margin-left: 7px;"></i></a>
+            <a href="https://www.instagram.com/enactus_manchester/"><i class="fa fa-instagram" style="font-size:30px; color: white; margin-right: 7px; margin-left: 7px;"></i></a>
+            <a href="https://www.linkedin.com/company/enactus-manchester/about/"><i class="fa fa-linkedin" style="font-size:30px; color: white; margin-left: 7px;"></i></a>
           </div>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">Events</a>
@@ -255,21 +268,21 @@
     <div class="carousel-inner" role="listbox">
       <!-- Slide One - Set the background image for this slide in the line below -->
       <div class="carousel-item active" style="background-image: url('./images/carousel/carousel2.jpg')">
-        <div class="carousel-caption d-none d-md-block" style="position: absolute; top: 45%;">
+        <div class="carousel-caption d-md-block" style="position: absolute; top: 45%;">
           <h2 class="display-4" style="font-weight: bold;">Enactus Manchester</h2>
           <p class="lead" style="font-weight: bold;">We rise by lifting others.</p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('./images/carousel/carousel2.PNG')">
-        <div class="carousel-caption d-none d-md-block" style="position: absolute; top: 45%;">
+        <div class="carousel-caption d-md-block" style="position: absolute; top: 45%;">
           <h2 class="display-4" style="font-weight: bold;">Enactus Manchester</h2>
           <p class="lead" style="font-weight: bold;">We rise by lifting others.</p>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('./images/carousel/carousel3.jpg') ">
-        <div class="carousel-caption d-none d-md-block" style="position: absolute; top: 45%;">
+        <div class="carousel-caption d-md-block" style="position: absolute; top: 45%;">
           <h2 class="display-4" style="font-weight: bold;">Enactus Manchester</h2>
           <p class="lead" style="font-weight: bold;">We rise by lifting others.</p>
         </div>
@@ -373,10 +386,16 @@
 <section class="events" id="eventsPage">
   <br>
   <h1 class="display-4" style= "text-align: center; color: white" >Events</h1>
+  <svg  style="display: block; margin: 0 auto;" width="100" height="7">
+    <rect width="100" height="7" style="fill:#fecb18;stroke-width:3;stroke:#fecb18;" />
+  </svg>
   <br>
   <p> some stuff </p>
   <br>
   <h1 class="display-4" style= "text-align: center; color: white" >Past events and competitions</h1>
+  <svg  style="display: block; margin: 0 auto;" width="175" height="7">
+    <rect width="175" height="7" style="fill:#fecb18;stroke-width:3;stroke:#fecb18;" />
+  </svg>
   <br>
 
   <div class="container d-flex h-100 justify-content-center">
@@ -404,6 +423,20 @@
 
 </section>
 
+<section class="opportunities" id="opportunitiesPage">
+
+  <br>
+  <h1 class="display-4" style= "text-align: center" >Opportunites</h1>
+  <svg  style="display: block; margin: 0 auto;" width="135" height="7">
+    <rect width="135" height="7" style="fill:#fecb18;stroke-width:3;stroke:#fecb18;" />
+  </svg>
+  <br>
+
+</section>
+
+
+
+
 <section class="committee" id="committeePage">
 
   <br>
@@ -423,9 +456,7 @@
               <p>Co-President Executives</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/sonja-h-83664112a/"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -440,9 +471,7 @@
               <p>Co-President Projects</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/alexia-leroy-681b05181/"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -458,9 +487,7 @@
               <p>Marketing Executive</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/ilaydacotelioglu/"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -486,9 +513,7 @@
               <p>Corporate Relations Executive</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/burcu-can/"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -503,9 +528,7 @@
               <p>Co-Project Leader: EmpowerMEal</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/ana-maria-oproiu-b1a1a7189/"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -521,9 +544,7 @@
               <p>Co-Project Leader: EmpowerMEal</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -547,9 +568,7 @@
               <p>Co-Project Leader: Blossom</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -564,9 +583,7 @@
               <p>Co-Project Leader: Next Step</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -581,9 +598,7 @@
               <p>Co-Project Leader: Next Step</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -608,9 +623,7 @@
               <p>Co-Leader: Innovation Team</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -625,9 +638,7 @@
               <p>Co-Leader: Innovation team</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/mahima-j-64096a123/"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -642,9 +653,7 @@
               <p>Events Officer</p>
             </div>
             <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -669,9 +678,7 @@
                 <p>Events Officer</p>
               </div>
               <div class="s-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/in/marinanovack/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -686,9 +693,7 @@
                 <p>IT Executive</p>
               </div>
               <div class="s-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/in/kashish-raimalani/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
